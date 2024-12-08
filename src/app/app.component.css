@@ -1,0 +1,19 @@
+.container {
+  padding: 20px;
+  margin: auto;
+}
+.length {
+  padding: 10px;
+}
+.gen {
+  padding: 10px;
+}
+.check {
+  padding: 10px;
+}
+.show {
+  padding: 10px;
+}
+h3 {
+  text-decoration: underline;
+}

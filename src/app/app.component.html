@@ -1,0 +1,33 @@
+<div class="container">
+  <h3>Random Password Generator</h3>
+  <div class="length">
+    <label>Enter Password Length :</label>
+    &nbsp;
+    <input
+      (input)="enterLength($event)"
+      type="text"
+      name="len"
+      id="leng"
+      placeholder="EnterLength"
+    />
+  </div>
+  <div class="check">
+    <input (change)="letters()" type="checkbox" name="letters" id="ltrs" />
+    <label>Use Letters</label>
+    &nbsp;
+    <input (change)="numbers()" type="checkbox" name="numbers" id="numbr" />
+    <label>Use Numbers</label>
+    &nbsp;
+    <input (change)="symbols()" type="checkbox" name="spchars" id="spc" />
+    <label>Use Symbols</label>
+    &nbsp;
+  </div>
+  <div class="gen">
+    <button (click)="generate()">Generate Password</button>
+  </div>
+  <div class="show" *ngIf="password">
+    <label>Generated Password : </label>
+    &nbsp;
+    <input type="text" name="genpwd" id="result" [value]="password" />
+  </div>
+</div>
